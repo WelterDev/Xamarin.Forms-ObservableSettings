@@ -19,7 +19,7 @@ namespace SomeXamarinFormsApp.Services
         public string SomeString { get => Get<string>(); set => Set(value); }
 
         [DefaultSettingValue(Value = DateTime.Today)]
-        public DateTime SomeDateTime { get => Get<string>(); set => Set(value); }
+        public DateTime SomeDateTime { get => Get<DateTime>(); set => Set(value); }
     }
 
     public class ObservableSettings : INotifyPropertyChanged
